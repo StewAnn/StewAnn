@@ -11,7 +11,6 @@ public class RationalTest {
 
     @Test
     public void plus() {
-
         Rational actual = r1.plus(r2);
         Rational expected = new Rational(22,15);
         assertEquals(expected, actual);
