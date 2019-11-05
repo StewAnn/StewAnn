@@ -31,4 +31,16 @@ public class Polinom {
         }
         return (newP);
     }
+
+    public Polinom minus(Polinom p) {
+        RationalList arr = new RationalList();
+        Polinom newP = new Polinom(arr);
+        for (int i = 0; i <= p.a.length() - 1; i++) {
+            newP.a.add(a.getElement(i).minus(p.a.getElement(i)));
+        }
+        for (int i = p.a.length(); i <= a.length() - 1; i++) {
+            newP.a.add(a.getElement(i));
+        }
+        return (newP);
+    }
 }
