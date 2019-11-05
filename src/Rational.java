@@ -91,15 +91,13 @@ public class Rational {
     }
 
     public Rational minus(int a){
-        a = a * -1;
-        int _m = a * n + m;
+        int _m = m - a * n ;
         return new Rational(_m , n);
     }
 
     public Rational minus(Rational a){
-        a.m = a.m * -1;
         int _n = n * a.n;
-        int _m = m * a.n + a.m * n;
+        int _m = m * a.n - a.m * n;
         return new Rational(_m , _n);
     }
 
