@@ -1,0 +1,3 @@
+[submodule "awesome-readme"]
+	path = awesome-readme
+	url = https://github.com/matiassingers/awesome-readme.git
