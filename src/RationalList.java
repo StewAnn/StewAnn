@@ -14,7 +14,7 @@ public class RationalList {
         return(i);
     }
 
-    public Rational element( int i){
+    public Rational getElement(int i){
         return(massiv[i]);
     }
 
