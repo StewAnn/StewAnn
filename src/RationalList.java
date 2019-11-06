@@ -73,6 +73,14 @@ public class RationalList {
         return k;
     }
 
+    public Rational getSumOfList(){
+        Rational sum = new Rational(0);
+        for ( int i = 0; i <= massiv.length-1; i++){
+            sum = sum.plus(massiv[i]);
+        }
+        return sum;
+    }
+
     public void print(){
         for( int i = 0; i <= massiv.length-1; i++){
             massiv[i].print();
