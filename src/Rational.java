@@ -123,6 +123,11 @@ public class Rational {
         int _m2 = a.m * n;
         if (_m1 < _m2) return true; else return false;
     }
+    public Rational toBeInteger(){
+        Rational rational = this.minus(1);
+        rational.m = rational.m*-1;
+        return(rational);
+    }
 
     public float toFloat(){
         return ((float)m/n);
