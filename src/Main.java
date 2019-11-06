@@ -25,6 +25,7 @@ public class Main {
         Polinom p2 = new Polinom(arr2);
         Polinom p3 = p1.plus(p2);
         System.out.println(p3);
+        String s3 = p3.print(); System.out.println(s3);
     }
 
 }

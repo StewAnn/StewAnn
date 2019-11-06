@@ -43,4 +43,31 @@ public class Polinom {
         }
         return (newP);
     }
+
+    public String print(){
+        String s = "";
+        for (int i = a.length() - 1; i >= 0; i--) {
+            if (i != 0) {
+                if (a.getElement(i).getM()<0) {
+                    Rational rational = new Rational(a.getElement(i).getM()*-1,a.getElement(i).getN());
+                    s += "- (" + rational + ")x^" + i + " ";
+                } else {
+                    if (i  == a.length()-1) {
+                        s += "(" + a.getElement(i) + ")x^" + i + " ";
+                    } else s += "+ (" + a.getElement(i) + ")x^" + i + " ";
+                }
+            } else {
+                if (a.getElement(i).getM()<0) {
+                    Rational rational = new Rational(a.getElement(i).getM()*-1,a.getElement(i).getN());
+                    s += "- (" + rational + ")"  ;
+                } else {
+                    s += "+ (" + a.getElement(i) + ")" ;
+                }
+
+
+            }
+        }
+        return s;
+
+    }
 }
