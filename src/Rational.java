@@ -124,6 +124,10 @@ public class Rational {
         if (_m1 < _m2) return true; else return false;
     }
 
+    public float toFloat(){
+        return ((float)m/n);
+    }
+
     public void print(){
         System.out.print(m + "/" + n + " ");
     }
