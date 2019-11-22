@@ -2,7 +2,7 @@
 # Project Name
 > This project shows how works Fraction numbers!
 ## Rational methods
-* [reduse](# method - info)
+* [reduse](#method - info)
 * [plus](# method - info)
 * [minus](# method - info)
 * [div](# method - info)
